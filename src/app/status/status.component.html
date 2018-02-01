@@ -1,0 +1,13 @@
+<div class="holder">
+  <h1>User Info</h1>
+  <div class="info-table">
+    <div *ngFor="let obj of pageDataToShow">
+      <div class="key">
+        {{obj.key}}
+      </div>
+      <div class="value">
+          {{obj.value}}
+        </div>
+    </div>
+  </div>
+</div>

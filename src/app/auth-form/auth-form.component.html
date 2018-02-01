@@ -1,0 +1,10 @@
+<div class="form-holder">
+  <div class="flex-form">
+    <form action="">
+      <input type="email" placeholder="User Name" class="material-field" [(ngModel)]="username" name="username"/>
+      <input type="password" placeholder="Password" class="material-field" [(ngModel)]="password" name="password"/>
+      <re-captcha site_key="6LcKNEIUAAAAAPGe3VDGzUcqXyi5iyMD-IPhiXej" (captchaResponse)="handlCaptchaResponse($event)"></re-captcha>
+      <button class="form-submit" (click)="checkAuthData()">Log In</button>
+    </form>
+  </div>
+</div>
