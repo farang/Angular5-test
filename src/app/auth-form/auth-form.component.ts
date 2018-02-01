@@ -40,7 +40,7 @@ export class AuthFormComponent implements OnInit {
     setTimeout(() => {
       this.auth.getUserStatus({
         "X-XSRF-TOKEN": xsrf,
-        "X-FALCON-TOKEN": falcon
+        "X-FALCON-TOKEN": falcon,
       }).then((userStatus) => {
         this.userdata.setInfo(userStatus);
         this._router.navigate(['status']);
